@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assets/code.css">
+    <script src="./lib/EZ.js"></script>
+
+    <script>
+        // let res = ez.rand(5,25)
+        // console.log(res);
+        // // res will be between 5-25
+        // res = ez.rand(5)
+        // console.log(res);
+        // // res will be between 0-5
+        // res = ez.rand()
+        // console.log(res);
+        // // res will be between 0-1
+
+        // //will return object with:{
+        // //days:396,
+        // //hours:04,
+        // //minutes:52,
+        // //seconds:32,}
+    </script>
+    
+</head>
+<body>
+    <div class="Wraper">
+        <div class="code">
+            <div class="fileName">
+                <p>YourFile.js</p>
+                <p class="copy" >copy</p>
+            </div>
+            <div class="codeContent">
+                <p><span class="resv">const</span> <span class="constVar">ez</span>  = <span class="resv">new</span> <span class="class">EZ</span><span class="func">()</span>;</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="code">
+            <div class="fileName">
+                <p>YourHTML.html</p>
+                <p class="copy" >copy</p>
+            </div>
+            <div class="codeContent">
+                <p> <span class="gre"><</span><span class="resv">script</span>
+                 <span class="constVar">src</span>=<span class="string">"./lib/EZ.js"</span><span class="gre"><</span><span class="gre">/</span><span class="resv">script</span><span class="gre">></span>
+                </p>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="code">
+            <div class="fileName">
+                <p>YourFile.js</p>
+                <p class="copy" >copy</p>
+            </div>
+            <div class="codeContent">
+                <p><span class="resv">let</span> <span class="constVar">str</span>  = <span class="constVar">ez</span>.<span class="funcN">dateToString</span><span class="func">()</span>;</p>
+                <p><span class="constVar">console</span>.<span class="funcN">log</span><span class="func">(<span class="constVar">str</span>)</span></p>
+                <p><span class="comm">//will return the string of today date</span></p>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="code">
+            <div class="fileName">
+                <p>YourFile.js</p>
+                <p class="copy" >copy</p>
+            </div>
+            <div class="codeContent">
+                <p><span class="resv">let</span> <span class="constVar">res</span>  = <span class="constVar">ez</span>.<span class="funcN">timeDiff</span><span class="func">(<span class="string">'2021-06-06 12:00'</span>,<span class="string">'2022-07-07 16:52:33'</span>)</span>;</p>
+                <p><span class="constVar">console</span>.<span class="funcN">log</span><span class="func">(<span class="constVar">str</span>)</span></p>
+                <p><span class="comm">//will return object with: <br>
+                {days:396,
+                 hours:04,
+                 minutes:52,
+                 seconds:32}
+                </span></p>
+            </div>
+        </div>
+        <br><br>
+        <div class="code">
+            <div class="fileName">
+                <p>YourFile.js</p>
+                <p class="copy" >copy</p>
+            </div>
+            <div class="codeContent">
+                <p><span class="resv">let</span> <span class="constVar">str</span>  = <span class="constVar">ez</span>.<span class="funcN">rand</span><span class="func">(<span class="num">5</span>,<span class="num">25</span>)</span>;</p>
+                <p><span class="constVar">console</span>.<span class="funcN">log</span><span class="func">(<span class="constVar">str</span>)</span></p>
+                <p><span class="comm">//will return the string of today date</span></p>
+            </div>
+        </div>
+
+
+    </div>
+
+    
+    
+</body>
+</html>
