@@ -30,6 +30,13 @@
     align-items: center;
     justify-content: space-between;
 }
+.copy {
+    display: flex;
+    align-items: center;
+}
+.copy img {
+    margin-inline: 5px;
+}
 .codeContent p {
     padding-left: 15px;
     padding-block: 5px;
