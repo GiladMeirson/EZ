@@ -41,7 +41,14 @@
     padding-left: 15px;
     padding-block: 5px;
     font-size: 20px;
+   
 
+}
+.code-wraper{
+    width: 75%;
+}
+.code span {
+    font-family: monospace;
 }
 .codeContent{
     border-bottom: 1px grey solid;
