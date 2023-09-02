@@ -44,8 +44,11 @@
    
 
 }
-.code-wraper{
+.code-wraper-big{
     width: 75%;
+}
+.code-wraper-small{
+    width: 35%;
 }
 .code span {
     font-family: monospace;

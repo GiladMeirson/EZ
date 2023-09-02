@@ -5,6 +5,7 @@
 <link rel="icon" type="image/x-icon" href="./Assets/16.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="stylesheet" href="./Assets/index3.css">
@@ -19,14 +20,14 @@ body {font-size:16px;}
 
 <script>
     const init = ()=> {
+    $('#Home-container').fadeOut();
+    $('#JS-examples-container').fadeOut();
+    $('#CSS-examples-container').fadeOut();
+    $('#Contributing-container').fadeOut();
+    $('#Contact-container').fadeOut();
+    $('#Download-container').fadeOut();
+    $('#Get-Started-container').fadeIn();
 
-
-            fadeOut(elm('#Home-container'));
-            fadeOut(elm('#JS-examples-container'));
-            fadeOut(elm('#CSS-examples-container'));
-            fadeOut(elm('#Contributing-container'));
-            fadeOut(elm('#Download-container'));
-            fadeOut(elm('#Contact-container'));
     }
 </script>
 </head>
@@ -34,13 +35,13 @@ body {font-size:16px;}
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">X</a>
+  <a id="closeM" href="javascript:void(0)" onclick="w3_close(this)" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">X</a>
   <div class="w3-container">
     <h3 class="w3-padding-64"><b>EZ.js</b></h3>
   </div>
   <div class="w3-bar-block">
     <a id="Home" onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a id="Get-Started" onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white">Get Started</a> 
+    <a id="Get-Started" onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white activeA">Get Started</a> 
     <a id="JS-examples" onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white">JS examples</a> 
     <a id="CSS-examples" onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white">CSS examples</a> 
     <a id="Contributing" onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white">Contributing</a> 
@@ -62,7 +63,7 @@ body {font-size:16px;}
     <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
         <!-- Header -->
-        <div class="w3-container" style="margin-top:80px" id="HeaderLog">
+        <div class="w3-container" style="margin-top:10px" id="HeaderLog">
           <img  id="logoImg" src="./Assets/fullLogo.png" alt="">
           <h1 class="w3-jumbo"><b>Get Started</b></h1>
         </div>
@@ -76,7 +77,7 @@ body {font-size:16px;}
           <hr style="width:50px;border:5px solid rgb(165, 118, 196)" class="w3-round">
           <p class="SomeContent">To start working with the EZ package you must add the following CDN to the head tag</p>
           <!-- piece of code -->
-          <div class="code-wraper">
+          <div class="code-wraper-big">
               <div class="code">
                   <div class="fileName">
                       <p>YourHtmlFile.html</p>
@@ -89,7 +90,7 @@ body {font-size:16px;}
                   </div>
               </div>
           </div>
-          <div class="code-wraper">
+          <div class="code-wraper-big">
               <p class="SomeContent">After you have added the script tag with the package link to the beginning of your project,
                   You can enjoy the multitude of functionalities 
                    that exist in the ez object, you are welcome to make a console log for 
@@ -100,12 +101,12 @@ body {font-size:16px;}
                   <br><br>It will look like this : <br>
                 <  link rel="stylesheet" href="https://giladmeirson.github.io/EZ/lib/EZ.css"> <br>
       
-                  <span style="font-size: 12px;">(*) Please note that if for some reason you do not see a link to the design, you must add it manually</span></p>
+                  <span style="font-size: 12px; color: rgb(216, 134, 233);">(*) Please note that if for some reason you do not see a link to the design, you must add it manually</span></p>
                    
           </div>
           <br>
           <p class="SomeContent">If you want to implement the package into your own object, you can do it like this:</p>
-          <div class="code-wraper">
+          <div class="code-wraper-small">
               <div class="code">
                   <div class="fileName">
                       <p>YourJsFile.js</p>
@@ -118,7 +119,7 @@ body {font-size:16px;}
       
               <p class="SomeContent">In fact, the entire library sits inside a class called EZ, so you can easily import it into your JS file
                   <br>
-                  <span style="font-size: 12px;">(*) Note that we have already prepared for you a variable named ez that is ready with the functions, so there is really no need to execute the above command</span>
+                  <span style="font-size: 12px; color: rgb(216, 134, 233);">(*) Note that we have already prepared for you a variable named ez that is ready with the functions, so there is really no need to execute the above command</span>
               </p>
               
       
@@ -247,7 +248,21 @@ body {font-size:16px;}
 <!-- !PAGE CONTENT! -->
 
 <div id="Home-container">
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:10px" id="HeaderLog">
+          <img  id="logoImg" src="./Assets/fullLogo.png" alt="">
+          <h1 class="w3-jumbo"><b>Home</b></h1>
+        </div>
+        
+      
+      
+      
+
+        
+
+      </div>
 </div>
 <div id="JS-examples-container">
 
@@ -277,14 +292,30 @@ function w3_open() {
 function w3_close(a) {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
-//   fadeOut(elm('#Home-container'));
-//   fadeOut(elm('#Get-Started-container'));
-//   fadeOut(elm('#JS-examples-container'));
-//   fadeOut(elm('#CSS-examples-container'));
-//   fadeOut(elm('#Contributing-container'));
-//   fadeOut(elm('#Download-container'));
-//   fadeOut(elm('#Contact-container'));
-//   fadeIn(elm(`#${a.id}-container`))
+  if (a.id=='closeM' || a. id == undefined) {
+    return;
+  }
+    //7
+    $('#Home-container').fadeOut();
+    $('#Get-Started-container').fadeOut();
+    $('#JS-examples-container').fadeOut();
+    $('#CSS-examples-container').fadeOut();
+    $('#Contributing-container').fadeOut();
+    $('#Contact-container').fadeOut();
+    $('#Download-container').fadeOut();
+    $(`#${a.id}-container`).fadeIn(250);
+
+    let aList = document.getElementsByClassName('w3-bar-item');
+    for (let i = 0; i < aList.length; i++) {
+        const element = aList[i];
+        element.classList.remove('activeA')
+
+        
+    }
+    a.classList.add('activeA');
+
+
+
 }
 
 // Modal Image Gallery

@@ -20,13 +20,17 @@ body {
 }
 .w3-jumbo{
     color: #aa86ff;
+    font-size: 44px!important;
+    margin-top: 34px;
 
 }
+
 #logoImg{
     width: 25%;
+    min-width: 250px
 }
 #HeaderLog{
-    margin-top: 80px;
+    margin-top: 50px;
     display: flex;
     align-content: center;
     align-items: center;
@@ -44,4 +48,17 @@ body {
     border-radius: 15px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.activeA{
+    color: #ffffff!important;
+    background-color: #8031c0b9!important;
+    border-radius: 15px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.w3-bar-block a {
+    cursor: pointer;
+
 }
