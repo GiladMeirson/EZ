@@ -24,6 +24,10 @@ body {
     margin-top: 34px;
 
 }
+.SomeContent li:hover {
+    color:#8a73f0;
+    cursor: pointer;
+}
 
 #logoImg{
     width: 25%;
