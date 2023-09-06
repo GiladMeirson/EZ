@@ -10,6 +10,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="stylesheet" href="./Assets/index3.css">
 <link rel="stylesheet" href="./Assets/code.css">
+
+<link rel="stylesheet" href="./lib/EZ.css">
+
 <script src="https://giladmeirson.github.io/EZ/lib/EZ.js"></script>
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
@@ -37,12 +40,22 @@ body {font-size:16px;}
 <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a id="closeM" href="javascript:void(0)" onclick="w3_close(this)" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">X</a>
   <div class="w3-container">
-    <h3 class="w3-padding-64"><b>EZ.js</b></h3>
+    <h3 class="w3-padding-64"><b>EZ.js - Menu</b></h3>
   </div>
   <div class="w3-bar-block">
     <a id="Home" onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white">Home</a> 
     <a id="Get-Started" onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white activeA">Get Started</a> 
-    <a id="JS-examples" onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white">JS examples</a> 
+    <details id="SubTitles-Js">
+      <summary>JS-examples</summary>
+      <a onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white" id="MathEX">Math</a> 
+      <a onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white" id="ArraysEX">Arrays</a>
+      <a onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white" id="DateEX">Times & Date</a>
+      <a onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white" id="canvasEX">Canvas</a>
+      <a onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white" id="ColorsEX">Colors</a>
+      <a onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white" id="stylingEX">Styling</a>
+      <a onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white" id="FilesEX">Files</a>
+
+    </details>
     <a id="CSS-examples" onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white">CSS examples</a> 
     <a id="Contributing" onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white">Contributing</a> 
     <a id="Download" onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white">Download</a> 
@@ -59,12 +72,14 @@ body {font-size:16px;}
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
+
+<!-- GET STARTED PAGE -->
 <div id="Get-Started-container">
     <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
         <!-- Header -->
-        <div class="w3-container" style="margin-top:10px" id="HeaderLog">
-          <img  id="logoImg" src="./Assets/fullLogo.png" alt="">
+        <div class="w3-container" style="margin-top:61px" id="HeaderLog">
+          <img  id="logoImg" src="./Assets/fullLogo4.png" alt="">
           <h1 class="w3-jumbo"><b>Get Started</b></h1>
         </div>
         
@@ -124,10 +139,37 @@ body {font-size:16px;}
               
       
           </div>
-          <br><br>
-          <p class="SomeContent">If you want to use only the CSS designs of the library without the JS functionality you can just copy the following link</p>
+          <hr style="border: 1px solid #ae90f3b9; width: 75%;">
+          <br>
+          <div  id="QuickExample">
+            <h3 style="margin-bottom: 45px;" class="SomeContent">Quick Example:</h3>
+            <div style="margin-block: 15px;" class="code-wraper-big">
+              <div class="code">
+                <div class="fileName">
+                    <p>YourFile.js</p>
+                    <p class="copy" ><img style="width: 15px;" src="./Assets/copy.png" alt=""> copy</p>
+                </div>
+                <div class="codeContent">
+                    <p> <span class="constVar">ez</span>.<span class="funcN">speak<span class="func">(</span><span class="string">"Your Text Here !"</span><span class="func">)</span></span>;</p>
+                </div>
+            </div>
+            <br>
+            <div style="padding: 15px; margin-block: 40px; margin-bottom: 65px;" class="code">
+              <p class="SomeContent">Output Example:</p>
+              <hr style="border: 0.2px solid #ae90f3b9; width: 20%;">
+              <div class="OutputEx">
+                <input placeholder="Your Text Here.." id="SpeakEXampleInput" type="text">
+                <button onclick="SpeakExample()" class="Colorfull-btn">Speak</button>
+              </div>
+            </div>
+
+          </div>
+          </div>
+          <hr style="border: 1px solid #ae90f3b9; width: 75%;">
           <!-- piece of code -->
           <div class="code-wraper-big">
+            <p class="SomeContent">If you want to use only the CSS designs of the library without the JS functionality you can just copy the following link:</p>
+
               <div class="code">
                   <div class="fileName">
                       <p>YourHtmlFile.html</p>
@@ -143,130 +185,18 @@ body {font-size:16px;}
       
         </div>
         
-        <!-- Designers -->
-        <!-- <div class="w3-container" id="designers" style="margin-top:75px">
-          <h1 class="w3-xxxlarge w3-text-red"><b>Designers.</b></h1>
-          <hr style="width:50px;border:5px solid red" class="w3-round">
-          <p>The best team in the world.</p>
-          <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-          <p><b>Our designers are thoughtfully chosen</b>:</p>
-        </div> -->
-      
-        <!-- The Team -->
-        <!-- <div class="w3-row-padding w3-grayscale">
-          <div class="w3-col m4 w3-margin-bottom">
-            <div class="w3-light-grey">
-              <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-              <div class="w3-container">
-                <h3>John Doe</h3>
-                <p class="w3-opacity">CEO & Founder</p>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-              </div>
-            </div>
-          </div>
-          <div class="w3-col m4 w3-margin-bottom">
-            <div class="w3-light-grey">
-              <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-              <div class="w3-container">
-                <h3>Jane Doe</h3>
-                <p class="w3-opacity">Designer</p>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-              </div>
-            </div>
-          </div>
-          <div class="w3-col m4 w3-margin-bottom">
-            <div class="w3-light-grey">
-              <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-              <div class="w3-container">
-                <h3>Mike Ross</h3>
-                <p class="w3-opacity">Architect</p>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-              </div>
-            </div>
-          </div>
-        </div> -->
-      
-        <!-- Packages / Pricing Tables -->
-        <!-- <div class="w3-container" id="packages" style="margin-top:75px">
-          <h1 class="w3-xxxlarge w3-text-red"><b>Packages.</b></h1>
-          <hr style="width:50px;border:5px solid red" class="w3-round">
-          <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
-        </div>
-      
-        <div class="w3-row-padding">
-          <div class="w3-half w3-margin-bottom">
-            <ul class="w3-ul w3-light-grey w3-center">
-              <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-              <li class="w3-padding-16">Floorplanning</li>
-              <li class="w3-padding-16">10 hours support</li>
-              <li class="w3-padding-16">Photography</li>
-              <li class="w3-padding-16">20% furniture discount</li>
-              <li class="w3-padding-16">Good deals</li>
-              <li class="w3-padding-16">
-                <h2>$ 199</h2>
-                <span class="w3-opacity">per room</span>
-              </li>
-              <li class="w3-light-grey w3-padding-24">
-                <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-              </li>
-            </ul>
-          </div>
-              
-          <div class="w3-half">
-            <ul class="w3-ul w3-light-grey w3-center">
-              <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
-              <li class="w3-padding-16">Floorplanning</li>
-              <li class="w3-padding-16">50 hours support</li>
-              <li class="w3-padding-16">Photography</li>
-              <li class="w3-padding-16">50% furniture discount</li>
-              <li class="w3-padding-16">GREAT deals</li>
-              <li class="w3-padding-16">
-                <h2>$ 249</h2>
-                <span class="w3-opacity">per room</span>
-              </li>
-              <li class="w3-light-grey w3-padding-24">
-                <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
-              </li>
-            </ul>
-          </div>
-        </div> -->
-        
-        <!-- Contact -->
-        <!-- <div class="w3-container" id="contact" style="margin-top:75px">
-          <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
-          <hr style="width:50px;border:5px solid rgb(165, 118, 196)" class="w3-round">
-          <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
-          <form action="/action_page.php" target="_blank">
-            <div class="w3-section">
-              <label>Name</label>
-              <input class="w3-input w3-border" type="text" name="Name" required>
-            </div>
-            <div class="w3-section">
-              <label>Email</label>
-              <input class="w3-input w3-border" type="text" name="Email" required>
-            </div>
-            <div class="w3-section">
-              <label>Message</label>
-              <input class="w3-input w3-border" type="text" name="Message" required>
-            </div>
-            <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
-          </form>  
-        </div> -->
-      
-      <!-- End page content -->
+
       </div>
 </div>
-<!-- !PAGE CONTENT! -->
-
+<!-- GET STARTED PAGE -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- HOME PAGE -->
 <div id="Home-container">
     <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
         <!-- Header -->
-        <div class="w3-container" style="margin-top:10px" id="HeaderLog">
-          <img  id="logoImg" src="./Assets/fullLogo.png" alt="">
+        <div class="w3-container" style="margin-top:61px" id="HeaderLog">
+          <img  id="logoImg" src="./Assets/fullLogo4.png" alt="">
           <h1 class="w3-jumbo"><b>Home</b></h1>
         </div>
         <div class="w3-container" id="services" style="margin-top:15px">
@@ -295,21 +225,75 @@ body {font-size:16px;}
 
       </div>
 </div>
-<div id="JS-examples-container">
+<!-- HOME PAGE -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- MathEX PAGE -->
+<div id="MathEX-container">
 
 </div>
+<!-- MathEX PAGE -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- ArraysEX PAGE -->
+<div id="ArraysEX-container">
+
+</div>
+<!-- ArraysEX PAGE -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- DateEX PAGE -->
+<div id="DateEX-container">
+
+</div>
+<!-- DateEX PAGE -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- canvasEX PAGE -->
+<div id="canvasEX-container">
+
+</div>
+<!-- canvasEX PAGE -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- ColorsEX PAGE -->
+<div id="ColorsEX-container">
+
+</div>
+<!-- ColorsEX PAGE -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- stylingEX PAGE -->
+<div id="stylingEX-container">
+
+</div>
+<!-- stylingEX PAGE -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- FilesEX PAGE -->
+<div id="FilesEX-container">
+
+</div>
+<!-- FilesEX PAGE -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- CSS PAGE -->
 <div id="CSS-examples-container">
 
 </div>
+<!-- CSS PAGE -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- DOWNLOAD PAGE -->
 <div id="Download-container">
 
 </div>
+<!-- DOWNLOAD PAGE -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- Contact PAGE -->
 <div id="Contact-container">
 
 </div>
+<!-- Contact PAGE -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- Contributing PAGE -->
+
 <div id="Contributing-container">
 
 </div>
+<!-- Contributing PAGE -->
+
 <!-- W3.CSS Container -->
 <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">created bt Gilad Meirson</p></div>
 
@@ -355,6 +339,16 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
+}
+
+
+const SpeakExample =() =>{
+  let text = $('#SpeakEXampleInput').val();
+  if (text=='') {
+    text = 'Please Write your Text in the Input before your click the button.';
+
+  }
+  ez.speak(text);
 }
 </script>
 

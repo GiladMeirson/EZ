@@ -268,6 +268,70 @@ input[type='text']:hover,input[type='number']:hover,select:hover,input[type='ema
 .round{
     border-radius: 50%;
 }
+
+ .Colorfull-btn {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 22px;
+    margin-block: 15px;
+}
+
+.Colorfull-btn:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing2 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+  .Colorfull-btn:active {
+    color: #000
+}
+
+.Colorfull-btn:active:after {
+    background: transparent;
+}
+
+.Colorfull-btn:hover:before {
+    opacity: 1;
+}
+
+.Colorfull-btn:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing2 {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
 .btn-shadow{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -347,3 +411,316 @@ input[type='text']:hover,input[type='number']:hover,select:hover,input[type='ema
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
 }
+
+
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Falcon Chat CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ------------------btn */
+#msg-Input-container .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 22px;
+    margin-block: 15px;
+}
+
+#msg-Input-container .glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+#msg-Input-container  .glow-on-hover:active {
+    color: #000
+}
+
+#msg-Input-container  .glow-on-hover:active:after {
+    background: transparent;
+}
+
+#msg-Input-container  .glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+#msg-Input-container  .glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+/* ------------------btn */
+
+       #temp-container .slider {
+                -webkit-appearance: none;
+                width: 100%;
+                height: 10px;
+                border-radius: 5px;
+                background-image: linear-gradient(to right, rgb(69, 92, 241) , rgb(237, 94, 66));
+                outline: none;
+                cursor: pointer;
+                opacity: 0.9;
+                -webkit-transition: .2s;
+                transition: opacity .2s;
+                }
+
+                #temp-container .slider:hover {
+                opacity: 1;
+                }
+
+                #temp-container  .slider::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-image: linear-gradient(to left, rgb(69, 92, 241) , rgb(237, 94, 66));
+                box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+                cursor: pointer;
+                }
+
+                #temp-container   .slider::-moz-range-thumb {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                cursor: pointer;
+                }
+/* /////////////// */
+                #sample-container .slider {
+                -webkit-appearance: none;
+                width: 100%;
+                height: 10px;
+                border-radius: 5px;
+                background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(231, 237, 66));
+                outline: none;
+                cursor: pointer;
+                opacity: 0.9;
+                -webkit-transition: .2s;
+                transition: opacity .2s;
+                }
+
+                #sample-container .slider:hover {
+                opacity: 1;
+                }
+
+                #sample-container  .slider::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-image: linear-gradient(to left, rgb(255, 255, 255) , rgb(231, 237, 66));
+                box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+                cursor: pointer;
+                }
+
+                #sample-container   .slider::-moz-range-thumb {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                cursor: pointer;
+                }
+
+
+
+
+/* -------------------------------------- */
+
+        #Chat-Fal-Container{
+            width: 100%;
+            border: 1px black solid;
+            border-radius: 15px;
+            /* border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px; */
+        }
+        #Chat-Fal-Container .header {
+            font-size: 22px;
+            background-image: linear-gradient(to left, rgb(87, 87, 87) , rgb(18, 18, 18));
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            width: 100%;
+            
+        }
+        #Chat-Fal-Container .header p {
+    margin-block: 5px;
+    margin-left: 75px;
+    color: lightgreen;
+    margin-top: 18px;
+}
+#Chat-Fal-Container .header p span {
+float: right;
+margin-right: 15px;
+color: darkred;
+cursor: pointer;
+font-size: 32px;
+margin-top: -7px;
+}
+#Chat-Fal-Container .header p span:hover {
+float: right;
+margin-right: 15px;
+color: rgb(237, 88, 88);
+cursor: pointer;
+font-size: 32px;
+margin-top: -7px;
+}
+#Chat-Fal-Container #Msg-container {
+    border: 1px black solid;
+    padding: 15px;
+    overflow-y: scroll;
+    max-height: 75vh;
+    background-color: darkgrey;
+    width: 95.8%;
+    min-height: 250px;
+}
+        #Msg-container p {
+            margin: 0;
+
+        }
+        #Msg-container .human-msg  {
+            width: fit-content;
+            border: 1px black solid;
+            border-radius: 15px;
+            border-bottom-left-radius: 0px;
+            font-size: 16px;
+            padding: 4px;
+            padding-block: 8px;
+            float: left;
+            margin: 0;
+            margin-block: 10px;
+            background-color: rgb(98, 153, 90);
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            padding-inline: 35px;
+            padding-left: 15px;
+            margin-top: 20px;
+
+
+
+        }
+        #Msg-container .bot-msg{
+            width: fit-content;
+            border: 1px black solid;
+            border-radius: 15px;
+            border-bottom-right-radius: 0px;
+            font-size: 16px;
+            padding: 4px;
+            padding-block: 8px;
+            float: right;
+            margin: 0;
+            margin-block: 30px;
+            margin-top: 20px;
+            background-color: rgb(90, 118, 153);
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            padding-inline: 35px;
+            padding-left: 15px;
+
+        }
+        #Chat-Fal-Container .header  .msg-chat-bot-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    float: left;
+    margin-inline: 13px;
+    margin-block: 7px;
+    margin-block: 5px;
+}
+#Msg-container  .msg-chat-human-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    left: 27px;
+    top: -37px;
+}
+#Msg-container .human-msg-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 20px;
+}
+
+#Msg-container .bot-msg-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    min-height: 20px;
+}
+        #Msg-container p .timemsgspan{
+            font-size: 12px;
+            position: relative;
+            top: 5px;
+            left: 10px;
+        }
+        #msg-Input-container{
+            width: 100%;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            background-color: rgb(40, 40, 40);
+            color: antiquewhite;
+        }
+        #msg-Input-container #UserTextInput{
+            resize: none;
+            width: 90%;
+            margin-block: 15px;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 15px;
+            border:1px solid rgba(0, 128, 0, 0.511);
+        }
+        #msg-Input-container #UserTextInput:focus{
+            background-image: linear-gradient(to top, rgb(223, 221, 165) , rgb(217, 217, 196));
+        }
+        #msg-Input-container #UserTextInput{
+            background-image: linear-gradient(to left, rgb(87, 87, 87) , rgb(18, 18, 18));
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+        }
+        #msg-Input-container #slider-chat-container{
+            margin-top: 25px;
+        }
+        #msg-Input-container #slider-chat-container p{
+            font-size: 18px;
+        }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Falcon Chat CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
