@@ -323,8 +323,169 @@ body {font-size:16px;}
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <!-- CSS PAGE -->
 <div id="CSS-examples-container">
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:61px" id="HeaderLog">
+      <img  id="logoImg" src="./Assets/fullLogo4.png" alt="">
+      <h1 class="w3-jumbo"><b>EZ CSS</b></h1>
+    </div>
+    
+  
+  
+  
+    <!-- installations -->
+    <div class="w3-container" id="services3" style="margin-top:15px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Our CSS package</b></h1>
+      <hr class="hrRound">
+
+      <p class="SomeContent">some content here ! some content here ! some content here ! some content here ! some content here ! some content here ! </p>
+      <br>
+      <h1 class="w3-xxxlarge w3-text-red"><b>The box concept</b></h1>
+      <hr class="hrRound">
+
+      <p class="SomeContent">
+        Many client-side designers struggle to create a dynamic box design, here is an accessible CSS solution to the problem: <br>
+        The following classes <br>
+        .box2 <br>
+        .box3 <br>
+        .box4 <br>
+        Gives you a boxy design with a ratio of 16:9 (presumably that's your screen ratio), the number represents the amount of boxes you can fit across the width of the screen
+      </p>
+      <h3 class="SomeContent">box Example:</h3>
+      <div class="code-wraper-small">
+        <div class="code">
+          <div class="fileName">
+              <p>YourHtmlFile.html</p>
+              <p class="copy" data-codeCopy="<div class = 'box4'> </div>" ><img style="width: 15px;" src="./Assets/copy.png" alt=""> copy</p>
+          </div>
+          <div class="codeContent">
+              <p> <span class="gre"><</span><span class="resv">div</span> <span class="constVar">class</span> <span>=</span> <span class="string">"box4"</span><span class="gre">></span><span class="gre"><</span><span class="gre">/</span><span class="resv">div</span><span class="gre">></span>
+              </p>
+          </div>
+      </div>
+      </div>
+      <h3 class="SomeContent">Output:</h3>
+
+      <div class="box4">
+        .box4
+      </div>
+      <br>
+      <p class="SomeContent">
+        Note - If you are in a box design with a ratio of 1:1, that is square and not the screen ratio, you can use the same logic in classes .Box instead of .box
+      </p>
+      <div class="code-wraper-small">
+        <div class="code">
+          <div class="fileName">
+              <p>YourHtmlFile.html</p>
+              <p class="copy" data-codeCopy="<div class = 'Box4'> </div>" ><img style="width: 15px;" src="./Assets/copy.png" alt=""> copy</p>
+          </div>
+          <div class="codeContent">
+              <p> <span class="gre"><</span><span class="resv">div</span> <span class="constVar">class</span> <span>=</span> <span class="string">"Box4"</span><span class="gre">></span><span class="gre"><</span><span class="gre">/</span><span class="resv">div</span><span class="gre">></span>
+              </p>
+          </div>
+  
+      </div>
+      <br>
+      <h3 class="SomeContent">Output:</h3>
+  
+      <div class="Box4">
+        .Box4
+      </div>
+      <br> <br>
+
+      </div>
+      <h1 class="w3-xxxlarge w3-text-red"><b>Align elements concept</b></h1>
+      <hr class="hrRound">
+      <p class="SomeContent">Many of the developers are forced every time to rearrange the design of containers,
+        <br> the most accessible and easy solution that can be offered, is an arrangement of a row or an arrangement of a column. <br>
+        If it is a row the center will be vertical, if it is a column the arrangement will be centered horizontally. <br>
+        Which gives order and organization but remains flexible.
+        <br><br>
+        wrap-C will provide the column alignment <br>
+        wrap-R will provide the line alignment
+      </p>
+      <br>
+      <h3 class="SomeContent">Align examples inline:</h3>
+      <div class="code-wraper-small">
+        <div class="code">
+          <div class="fileName">
+              <p>YourHtmlFile.html</p>
+              <p class="copy" data-codeCopy="<div class = 'wrap-R'><div class='Box3'></div><div class='Box3'></div><div class='Box3'></div></div>" ><img style="width: 15px;" src="./Assets/copy.png" alt=""> copy</p>
+          </div>
+          <div class="codeContent">
+              <p> <span class="gre"><</span><span class="resv">div</span> <span class="constVar">class</span>
+                <span>=</span>
+                <span class="string">"wrap-R"</span><span class="gre">></span><br>
+                &nbsp&nbsp <span class="gre"><</span><span class="resv">div</span>
+                <span class="constVar">class</span>=<span class="string">"Box3"</span><span class="gre">></span><span class="gre"><</span><span class="gre">/</span><span class="resv">div</span><span class="gre">></span>
+                <br>
+                &nbsp&nbsp <span class="gre"><</span><span class="resv">div</span>
+                <span class="constVar">class</span>=<span class="string">"Box3"</span><span class="gre">></span><span class="gre"><</span><span class="gre">/</span><span class="resv">div</span><span class="gre">></span>
+                <br>
+                &nbsp&nbsp <span class="gre"><</span><span class="resv">div</span>
+                <span class="constVar">class</span>=<span class="string">"Box3"</span><span class="gre">></span><span class="gre"><</span><span class="gre">/</span><span class="resv">div</span><span class="gre">></span>
+                <br><span class="gre"><</span><span class="gre">/</span><span class="resv">div</span><span class="gre">></span>
+              </p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <h3 class="SomeContent">Output:</h3>
+    <div class="wrap-R">
+      <div class="Box3">
+        .Box3
+      </div>
+      <div class="Box3">
+        .Box3
+      </div>
+      <div class="Box3">
+        .Box3
+      </div>
+    </div>
+    <br>
+    <h3 class="SomeContent">Align examples block:</h3>
+    <div class="code-wraper-small">
+      <div class="code">
+        <div class="fileName">
+            <p>YourHtmlFile.html</p>
+            <p class="copy" data-codeCopy="<div class = 'wrap-C'><div class='box3'></div><div class='box3'></div><div class='box3'></div></div>" ><img style="width: 15px;" src="./Assets/copy.png" alt=""> copy</p>
+        </div>
+        <div class="codeContent">
+            <p> <span class="gre"><</span><span class="resv">div</span> <span class="constVar">class</span>
+              <span>=</span>
+              <span class="string">"wrap-C"</span><span class="gre">></span><br>
+              &nbsp&nbsp <span class="gre"><</span><span class="resv">div</span>
+              <span class="constVar">class</span>=<span class="string">"box3"</span><span class="gre">></span><span class="gre"><</span><span class="gre">/</span><span class="resv">div</span><span class="gre">></span>
+              <br>
+              &nbsp&nbsp <span class="gre"><</span><span class="resv">div</span>
+              <span class="constVar">class</span>=<span class="string">"box3"</span><span class="gre">></span><span class="gre"><</span><span class="gre">/</span><span class="resv">div</span><span class="gre">></span>
+              <br>
+              &nbsp&nbsp <span class="gre"><</span><span class="resv">div</span>
+              <span class="constVar">class</span>=<span class="string">"box3"</span><span class="gre">></span><span class="gre"><</span><span class="gre">/</span><span class="resv">div</span><span class="gre">></span>
+              <br><span class="gre"><</span><span class="gre">/</span><span class="resv">div</span><span class="gre">></span>
+            </p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h3 class="SomeContent">Output:</h3>
+  <div class="wrap-C">
+    <div class="box3">
+      .box3
+    </div>
+    <div class="box3">
+      .box3
+    </div>
+    <div class="box3">
+      .box3
+    </div>
+  </div>
+
+    </div>
+  </div>
 </div>
+
 <!-- CSS PAGE -->
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <!-- DOWNLOAD PAGE -->

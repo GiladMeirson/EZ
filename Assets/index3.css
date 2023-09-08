@@ -107,3 +107,15 @@ body {
     cursor: pointer;
     margin-block: 15px;
 }
+
+
+.box2,.box3,.box4,.Box2,.Box3,.Box4{
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#range{
+    width: 20%;
+}
+
