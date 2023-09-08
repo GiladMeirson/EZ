@@ -238,6 +238,22 @@ input[type='text']:hover,input[type='number']:hover,select:hover,input[type='ema
     aspect-ratio: 16/9;
   }
 
+  .Box2{
+    width: 50vw;
+    border: 1px black solid;
+    aspect-ratio: 1/1;
+  }
+  .Box3{
+    width: 33.33vw;
+    border: 1px black solid;
+    aspect-ratio: 1/1;
+  }
+  .Box4{
+    width: 25vw;
+    border: 1px black solid;
+    aspect-ratio: 1/1;
+  }
+
 
   .header-fix {
     font-size: 25px;
