@@ -16,7 +16,7 @@ body {
     background-color: #000000!important;
 }
 .SomeContent{
-    color: #ba86ff;
+    color: #aa86ff;
 }
 .w3-jumbo{
     color: #aa86ff;
@@ -24,9 +24,29 @@ body {
     margin-top: 34px;
 
 }
+.w3-padding-64 {
+ padding: 0 !important;
+}
 .SomeContent li:hover {
     color:#8a73f0;
     cursor: pointer;
+}
+/* #SubTitles-Js a {
+    background-color: rgba(117, 57, 196, 0.636);
+} */
+.hrLong{
+    border: 1px solid #ae90f3b9;
+    width: 75%;
+}
+
+.hrShort{
+    border: 0.2px solid #ae90f3b9;
+    width: 20%;
+}
+.hrRound{
+    width: 50px;
+    border: 5px solid rgb(165, 118, 196);
+    border-radius: 4px;
 }
 
 #logoImg{
@@ -85,5 +105,5 @@ body {
 
 .w3-bar-block a {
     cursor: pointer;
-
+    margin-block: 15px;
 }

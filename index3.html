@@ -11,8 +11,6 @@
 <link rel="stylesheet" href="./Assets/index3.css">
 <link rel="stylesheet" href="./Assets/code.css">
 
-<link rel="stylesheet" href="./lib/EZ.css">
-
 <script src="https://giladmeirson.github.io/EZ/lib/EZ.js"></script>
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
@@ -20,7 +18,6 @@ body {font-size:16px;}
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
 </style>
-
 <script>
     const init = ()=> {
     $('#Home-container').fadeOut();
@@ -37,7 +34,7 @@ body {font-size:16px;}
 <body onload="init()">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold; overflow-x: hidden;" id="mySidebar"><br>
   <a id="closeM" href="javascript:void(0)" onclick="w3_close(this)" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">X</a>
   <div class="w3-container">
     <h3 class="w3-padding-64"><b>EZ.js - Menu</b></h3>
@@ -46,14 +43,14 @@ body {font-size:16px;}
     <a id="Home" onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white">Home</a> 
     <a id="Get-Started" onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white activeA">Get Started</a> 
     <details id="SubTitles-Js">
-      <summary>JS-examples</summary>
-      <a onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white" id="MathEX">Math</a> 
-      <a onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white" id="ArraysEX">Arrays</a>
-      <a onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white" id="DateEX">Times & Date</a>
-      <a onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white" id="canvasEX">Canvas</a>
-      <a onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white" id="ColorsEX">Colors</a>
-      <a onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white" id="stylingEX">Styling</a>
-      <a onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white" id="FilesEX">Files</a>
+      <summary>JS examples</summary>
+      <a onclick="w3_close(this)" style="margin-left: 4px;font-size:16px; font-weight: 300;" class="w3-bar-item w3-button w3-hover-white" id="MathEX"> Math</a> 
+      <a onclick="w3_close(this)" style="margin-left: 4px;font-size:16px;font-weight: 300;" class="w3-bar-item w3-button w3-hover-white" id="ArraysEX">Arrays</a>
+      <a onclick="w3_close(this)" style="margin-left: 4px;font-size:16px;font-weight: 300;" class="w3-bar-item w3-button w3-hover-white" id="DateEX">Times & Date</a>
+      <a onclick="w3_close(this)" style="margin-left: 4px;font-size:16px;font-weight: 300;" class="w3-bar-item w3-button w3-hover-white" id="canvasEX">Canvas</a>
+      <a onclick="w3_close(this)" style="margin-left: 4px;font-size:16px;font-weight: 300;" class="w3-bar-item w3-button w3-hover-white" id="ColorsEX">Colors</a>
+      <a onclick="w3_close(this)" style="margin-left: 4px;font-size:16px;font-weight: 300;" class="w3-bar-item w3-button w3-hover-white" id="stylingEX">Styling</a>
+      <a onclick="w3_close(this)" style="margin-left: 4px;font-size:16px;font-weight: 300;" class="w3-bar-item w3-button w3-hover-white" id="FilesEX">Files</a>
 
     </details>
     <a id="CSS-examples" onclick="w3_close(this)" class="w3-bar-item w3-button w3-hover-white">CSS examples</a> 
@@ -89,18 +86,18 @@ body {font-size:16px;}
         <!-- installations -->
         <div class="w3-container" id="services" style="margin-top:15px">
           <h1 class="w3-xxxlarge w3-text-red"><b>Installations.</b></h1>
-          <hr style="width:50px;border:5px solid rgb(165, 118, 196)" class="w3-round">
+          <hr class="hrRound">
           <p class="SomeContent">To start working with the EZ package you must add the following CDN to the head tag</p>
           <!-- piece of code -->
           <div class="code-wraper-big">
               <div class="code">
                   <div class="fileName">
                       <p>YourHtmlFile.html</p>
-                      <p class="copy" ><img style="width: 15px;" src="./Assets/copy.png" alt=""> copy</p>
+                      <p class="copy" data-codeCopy="<script src='https://giladmeirson.github.io/EZ/lib/EZ.js'></script>" ><img style="width: 15px;" src="./Assets/copy.png" alt=""> copy</p>
                   </div>
                   <div class="codeContent">
                       <p> <span class="gre"><</span><span class="resv">script</span> 
-                       <span class="constVar">src</span>=<span class="string">"https://giladmeirson.github.io/EZ/lib/EZ.js"</span><span class="gre"><</span><span class="gre">/</span><span class="resv">script</span><span class="gre">></span>
+                       <span class="constVar">src</span>=<span class="string">"https://giladmeirson.github.io/EZ/lib/EZ.js"</span><span class="gre">><</span><span class="gre">/</span><span class="resv">script</span><span class="gre">></span>
                       </p>
                   </div>
               </div>
@@ -125,7 +122,7 @@ body {font-size:16px;}
               <div class="code">
                   <div class="fileName">
                       <p>YourJsFile.js</p>
-                      <p class="copy" ><img style="width: 15px;" src="./Assets/copy.png" alt=""> copy</p>
+                      <p class="copy" data-codeCopy="const ez = new EZ();" ><img style="width: 15px;" src="./Assets/copy.png" alt=""> copy</p>
                   </div>
                   <div class="codeContent">
                       <p><span class="resv">const</span> <span class="constVar">ez</span>  = <span class="resv">new</span> <span class="class">EZ</span><span class="func">()</span>;</p>
@@ -139,24 +136,24 @@ body {font-size:16px;}
               
       
           </div>
-          <hr style="border: 1px solid #ae90f3b9; width: 75%;">
           <br>
-          <div  id="QuickExample">
-            <h3 style="margin-bottom: 45px;" class="SomeContent">Quick Example:</h3>
-            <div style="margin-block: 15px;" class="code-wraper-big">
+          <div id="QuickExample">
+            <h1  class="SomeContent">Quick example:</h3>
+            <hr style="margin-bottom: 45px;" class="hrRound">
+            <div style="margin-block: 15px;" class="code-wraper-small">
               <div class="code">
                 <div class="fileName">
                     <p>YourFile.js</p>
-                    <p class="copy" ><img style="width: 15px;" src="./Assets/copy.png" alt=""> copy</p>
+                    <p class="copy" data-codeCopy="ez.speak(`Your Text Here !`);" ><img style="width: 15px;" src="./Assets/copy.png" alt=""> copy</p>
                 </div>
                 <div class="codeContent">
-                    <p> <span class="constVar">ez</span>.<span class="funcN">speak<span class="func">(</span><span class="string">"Your Text Here !"</span><span class="func">)</span></span>;</p>
+                    <p> <span class="constVar">ez</span>.<span class="funcN">speak<span class="func">(</span><span class="string">"Your Text Here"</span><span class="func">)</span></span>;</p>
                 </div>
             </div>
             <br>
             <div style="padding: 15px; margin-block: 40px; margin-bottom: 65px;" class="code">
               <p class="SomeContent">Output Example:</p>
-              <hr style="border: 0.2px solid #ae90f3b9; width: 20%;">
+              <hr class="hrShort">
               <div class="OutputEx">
                 <input placeholder="Your Text Here.." id="SpeakEXampleInput" type="text">
                 <button onclick="SpeakExample()" class="Colorfull-btn">Speak</button>
@@ -165,15 +162,15 @@ body {font-size:16px;}
 
           </div>
           </div>
-          <hr style="border: 1px solid #ae90f3b9; width: 75%;">
           <!-- piece of code -->
           <div class="code-wraper-big">
             <p class="SomeContent">If you want to use only the CSS designs of the library without the JS functionality you can just copy the following link:</p>
+            <hr style="width: 100%;" class="hrLong">
 
               <div class="code">
                   <div class="fileName">
                       <p>YourHtmlFile.html</p>
-                      <p class="copy" ><img style="width: 15px;" src="./Assets/copy.png" alt=""> copy</p>
+                      <p class="copy" data-codeCopy="<link rel= 'stylesheet' href='https://giladmeirson.github.io/EZ/lib/EZ.css'>"><img style="width: 15px;" src="./Assets/copy.png" alt=""> copy</p>
                   </div>
                   <div class="codeContent">
                       <p> <span class="gre"><</span><span class="resv">link</span> <span class="constVar">rel</span>= <span class="string">"stylesheet"</span>
@@ -200,10 +197,11 @@ body {font-size:16px;}
           <h1 class="w3-jumbo"><b>Home</b></h1>
         </div>
         <div class="w3-container" id="services" style="margin-top:15px">
-          <h1 class="w3-xxxlarge w3-text-red"><b>WELCOME.</b></h1>
-          <hr style="width:50px;border:5px solid rgb(165, 118, 196)" class="w3-round">
+          <h1 class="w3-xxxlarge w3-text-red"><b>Welcome to EZ.js Your Ultimate JavaScript Library.</b></h1>
+          <hr class="hrRound">
           <p class="SomeContent">
-            Welcome to EZ.js, your go-to JavaScript library for unlocking a world of logical and design capabilities. With EZ.js, you'll gain access to an extensive toolkit: <br>
+            <span style="font-size: 20px;" class="SomeContent">Explore EZ.js an exceptional JavaScript library boasting an expansive selection
+               of CSS designs and a comprehensive array of highly efficient functions.</span><br>
             <ul class="SomeContent">
               <li>Math operations</li>
               <li>Date handling</li>
@@ -216,14 +214,31 @@ body {font-size:16px;}
               <li>Diverse designs and rendering options for tables and pop-ups</li>
               <li>Standout feature: Seamless connection to AI models and the ability to create neural networks, offering unmatched versatility for developers.</li>
             </ul>
-            
-
           </p>
-      
+          <br>
+          <h1 class="SomeContent">what is EZ.js?</h1>
+          <hr class="hrRound">
+          <p class="SomeContent">
+            EZ.js is a dynamic open-code JavaScript library meticulously crafted to revolutionize your web development experience. This innovative library seamlessly combines a vast repository of CSS designs with a rich assortment of highly efficient and practical functions, including an advanced AI package. <br><br>
+            At its core, EZ.js stands as a standalone package, completely independent of other JavaScript libraries. Its primary mission is to simplify your coding tasks and enhance your productivity by
+            providing a comprehensive suite of pre-written functions. The addition of the AI package
+            elevates EZ.js to new heights, allowing you to incorporate cutting-edge artificial intelligence capabilities into your web projects. <br><br>
+            Whether you're a seasoned developer looking to expedite your workflow or a newcomer seeking a powerful yet user-friendly tool, 
+            EZ.js has you covered. Discover the potential of EZ.js and the limitless possibilities of integrating AI into your web development projects.
+          </p>
+          <br>
+          <h1 class="SomeContent">Why choose EZ.js?</h1>
+          <hr class="hrRound">
+          <p class="SomeContent">
+            EZ.js stands as an independent package,<br>untethered from reliance on other JavaScript libraries. Within the realm of EZ.js , you will uncover an array
+            of meticulously crafted functions designed to streamline your programming tasks, profoundly simplifying your coding endeavors. Our library takes the
+            burden of coding complexity off your shoulders, allowing you to leverage pre-written solutions, ultimately saving you precious time and effort.
+          </p>
         </div>
 
+       
 
-      </div>
+    </div>
 </div>
 <!-- HOME PAGE -->
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -350,6 +365,10 @@ const SpeakExample =() =>{
   }
   ez.speak(text);
 }
+
+$('.copy').click((e)=>{
+  ez.copy(e.target.getAttribute('data-codecopy'))
+})
 </script>
 
 </body>
