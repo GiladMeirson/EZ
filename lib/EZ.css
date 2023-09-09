@@ -143,6 +143,14 @@ input[type='text']:hover,input[type='number']:hover,select:hover,input[type='ema
     align-items: center;
     min-height: 50px;
 }
+.wrap-G {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    min-height: 20px;
+    flex-wrap: wrap;
+}
 
 .wrap-R {
     display: flex;
