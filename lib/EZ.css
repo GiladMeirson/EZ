@@ -118,6 +118,7 @@ input[type=color] {
 		padding: 0;
 	}
 }
+
 /* input[type=date] {
 	border: .2em solid #000000;
 	padding: .8em .9em;
@@ -136,7 +137,17 @@ input[type=color] {
 } */
 
 input[type=date] {
-
+    min-height: 41px;
+    min-width: 241px;
+    border-radius: 10px;
+    border: none;
+}
+input[type=date]:hover {
+    max-height: 41px;
+    min-width: 241px;
+    border-radius: 10px;
+    border: none;
+    background-color:lightgoldenrodyellow ;
 }
 
 
@@ -146,8 +157,8 @@ input[type=checkbox] {
   margin: 0;
 	font: inherit;
   color: currentColor;
-  width: 1.15em;
-  height: 1.15em;
+  width: 1.85em;
+  height: 1.85em;
   border: 0.15em solid #aa59e4;
   border-radius: 0.15em;
   transform: translateY(-0.075em);
@@ -155,8 +166,8 @@ input[type=checkbox] {
   place-content: center;
 	&::before {
 		content: "";
-		width: 0.65em;
-		height: 0.65em;
+		width: 1.05em;
+		height: 1.05em;
 		transform: scale(0);
 		transition: 120ms transform ease-in-out;
 		box-shadow: inset 1em 1em #aa59e4;
