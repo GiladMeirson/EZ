@@ -270,6 +270,16 @@ input[type='text']:hover,input[type='number']:hover,select:hover,input[type='ema
     border: 1px black solid;
     aspect-ratio: 16/9;
   }
+  .box5{
+    width: 20vw;
+    border: 1px black solid;
+    aspect-ratio: 16/9;
+  }
+  .box8{
+    width: 12.5vw;
+    border: 1px black solid;
+    aspect-ratio: 16/9;
+  }
 
   .Box2{
     width: 50vw;
@@ -283,6 +293,16 @@ input[type='text']:hover,input[type='number']:hover,select:hover,input[type='ema
   }
   .Box4{
     width: 25vw;
+    border: 1px black solid;
+    aspect-ratio: 1/1;
+  }
+  .Box5{
+    width: 20vw;
+    border: 1px black solid;
+    aspect-ratio: 1/1;
+  }
+  .Box8{
+    width: 12.5vw;
     border: 1px black solid;
     aspect-ratio: 1/1;
   }
