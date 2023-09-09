@@ -77,7 +77,7 @@
     background-color: lightgoldenrodyellow;
 }
 
-input[type='text'],input[type='email'],select{
+input[type='text'],input[type='email'],select,input[type='tel'],input[type='search']{
     border-radius: 10px;
     font-size: 18px;
     padding: 5px;
@@ -96,8 +96,89 @@ input[type='number'],input[type='password']{
 
     
 }
-input[type='text']:hover,input[type='number']:hover,select:hover,input[type='email']:hover,input[type='password']:hover{
+input[type='text']:hover,input[type='number']:hover,select:hover,input[type='email']:hover,input[type='password']:hover,input[type='tel']:hover,input[type='search']:hover{
     background-color: lightgoldenrodyellow;
+}
+
+input[type=color] { 
+	padding: 0;
+	border: none;
+	width: 2em;
+	height: 2em;
+	border-radius: 50%;
+	&::-webkit-color-swatch {
+		border: none;
+		border-radius: 50%;
+	}
+	&::-webkit-color-swatch-wrapper {
+		padding: 0;
+	}
+}
+input[type=date] {
+	border: .2em solid #000000;
+	padding: .8em .9em;
+	border-radius: 2em;
+	color: #000000;
+	 &::-webkit-datetime-edit { padding: 1em; }
+	 &::-webkit-datetime-edit-fields-wrapper { background: rgba(#000000, .2); }
+	&::-webkit-datetime-edit-text { color: rgb(0, 0, 0); padding: 0 0.3em; }
+	 &::-webkit-datetime-edit-month-field { color: #000000; }
+	 &::-webkit-datetime-edit-day-field { color: #000000; }
+	 &::-webkit-datetime-edit-year-field { color: #000000; }
+	&::-webkit-inner-spin-button { display: none; }
+	&::-webkit-calendar-picker-indicator {
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'/%3E%3Cline x1='16' y1='2' x2='16' y2='6'/%3E%3Cline x1='8' y1='2' x2='8' y2='6'/%3E%3Cline x1='3' y1='10' x2='21' y2='10'/%3E%3C/svg%3E"); 
+	}
+}
+
+
+input[type=checkbox] {
+	appearance: none;
+  background-color: #fff;
+  margin: 0;
+	font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid #aa59e4;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+	display: grid;
+  place-content: center;
+	&::before {
+		content: "";
+		width: 0.65em;
+		height: 0.65em;
+		transform: scale(0);
+		transition: 120ms transform ease-in-out;
+		box-shadow: inset 1em 1em #aa59e4;
+		background-color: CanvasText;
+		clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+		transform-origin: left top;
+	}
+	&:checked::before {
+		transform: scale(1);
+	}
+}
+
+input[type=file] { display: none; }
+label[for=file] {
+	display: grid;
+	grid-auto-flow: column;
+	grid-gap: .5em;
+	justify-items: center;
+	align-content: center;
+	color: #aa59e4;
+	border: .2em solid #aa59e4;
+	background: hsl(0 0 0/0);
+	padding: .85em 1.5em;
+	color: #aa59e4;
+	border-radius: 2em;
+	transition: 1s;
+	&:hover, &:focus, &:active {
+		background: #aa59e4;
+		color: #fff;
+	}
 }
 
 
@@ -345,6 +426,77 @@ input[type='text']:hover,input[type='number']:hover,select:hover,input[type='ema
 .round{
     border-radius: 50%;
 }
+
+
+
+.Colorfull-btn {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 22px;
+    margin-block: 15px;
+}
+
+.btn-color-effect:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing3 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+  .btn-color-effect:active {
+    color: #000
+}
+
+.btn-color-effect:active:after {
+    background: transparent;
+}
+
+.btn-color-effect:hover:before {
+    opacity: 1;
+}
+
+.btn-color-effect:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing3 {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+
+
+
+
 
  .Colorfull-btn {
     width: 220px;
