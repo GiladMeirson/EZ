@@ -3,10 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mazor Cheat Sheet</title>
+    <title>Mazor EX</title>
+
+
+
+    <style>
+        .code{
+            background-color: rgb(32, 32, 32);
+            color: azure;
+            min-height: 50px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            font-family:monospace;
+            min-width: 70px;
+            width: 100%;
+            padding-bottom: 15px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+        }
+        .fileName p {
+            padding: 0;
+            margin: 0;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-block: 5px;
+            font-size: 18px;
+        }
+        .fileName {
+            border-bottom: 1px grey solid;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            display: flex;
+            background-color: rgb(41, 41, 41);
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .copy {
+            display: flex;
+            align-items: center;
+        }
+        .copy img {
+            margin-inline: 5px;
+        }
+        .codeContent p {
+            padding-left: 15px;
+            padding-block: 5px;
+            font-size: 20px;
+        
+
+        }
+        .code { 
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+        .code-wraper-bigger{
+            width: 100%;
+        }
+        .code-wraper-big{
+            width: 75%;
+        }
+        .code-wraper-med{
+            width: 55%;
+        }
+        .code-wraper-small{
+            width: 35%;
+        }
+        .code span {
+            font-family: monospace;
+        }
+        .codeContent{
+            border-bottom: 1px grey solid;
+
+        }
+        .code .resv{
+        color: #347dd6;
+        }
+        .code .constVar{
+            color: #4fc1ff;
+        }
+        .code .class{
+            color: #4ea965;
+        }
+        .code .func{
+            color: #ffc814;
+        }
+        .code .funcN{
+            color: #dcdc8c;
+        }
+        .code .num{
+            color: rgb(190, 190, 135);
+        }
+        .code .copy:hover {
+            cursor: pointer;
+            color: #868bff;
+        }
+
+        .code .string{
+            color: #ce9178;
+        }
+        .code .comm{
+            color:#5e993e;
+        }
+        .code .gre{
+            color: grey;
+        }
+    </style>
 </head>
 <body>
-
-
+<div style="width: 50vw;">
+   <div class="code">
+        <div class="fileName">
+        <P>YourJsFile.js</p>
+        <p class="copy">copy</p>
+        </div>
+        <div class="codeContent">
+        <p>
+        <span class="resv">let</span>
+        <span class="constVar">RandomNumber</span>
+        <span >= </span>
+        <span class="constVar">ez</span><span>.</span><span class="num">rand</span><span class="func">()</span>
+        </p>
+        <p>
+        <span class="comm">//result will be between 0 to 1 (float number)</span>  
+        </p>
+        <p>
+        <span class="resv">let</span>
+        <span class="constVar">RandomNumber2</span>
+        <span >= </span>
+        <span class="constVar">ez</span><span>.</span><span class="num">rand</span><span class="func">(</span><span class="num">5</span><span class="func">)</span>
+        </p>
+        <p>
+        <span class="comm">//result will be between 0 to 5 (float number)</span>  
+        </p>
+        <p>
+        <span class="resv">let</span>
+        <span class="constVar">RandomNumber3</span>
+        <span >= </span>
+        <span class="constVar">ez</span><span>.</span><span class="num">rand</span><span class="func">(</span><span class="num">5,25</span><span class="func">)</span>
+        </p>
+        <p>
+        <span class="comm">//result will be between 5 to 25 (whole number)</span>  
+        </p>
+        </div> 
+   </div> 
+        <br>
+        <br>
+   <div class="code">
+        <div class="fileName">
+        <P>YourJsFile.js</p>
+        <p class="copy">copy</p>
+        </div>
+        <div class="codeContent">
+         <p>
+          <span class="resv">let</span>
+          <span class="constVar">bool</span>
+          <span >= </span>
+          <span class="constVar">ez</span><span>.</span><span class="num">isPrime</span><span class="func">(</span><span class="num">77</span><span class="func">)</span><span>;</span>
+          </p>
+          <p>
+          <span class="comm">//will return False</span>  
+          </p>
+          <p>
+            <span class="resv">let</span>
+            <span class="constVar">bool2</span>
+            <span >= </span>
+            <span class="constVar">ez</span><span>.</span><span class="num">isPrime</span><span class="func">(</span><span class="num">73</span><span class="func">)</span><span>;</span>
+            </p>
+            <p>
+            <span class="comm">//will return True</span>  
+            </p>
+         
+        </div> 
+   </div>
+   <br>
+   <br>
+</div>
 </body>
 </html>
