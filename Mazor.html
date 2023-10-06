@@ -79,6 +79,9 @@
         .code .resv{
         color: #347dd6;
         }
+        .code .Purple{
+        color: #9224bd;
+        }
         .code .constVar{
             color: #4fc1ff;
         }
@@ -205,26 +208,75 @@
      
     </div> 
 </div>
+<br>
+<br>
+<div class="code">
+    <div class="fileName">
+    <P>YourJsFile.js</p>
+    <p class="copy" data-codeCopy="let bool = ez.isPrime(num)" ><img style="width: 15px;" src="./Assets/copy.png" alt=""> copy</p>
+    </div>
+    <div class="codeContent">
+     <p>
+      <span class="resv">let</span>
+      <span class="constVar">todaydate</span>
+      <span >= </span>
+      <span class="constVar">ez</span><span>.</span><span class="num">dateToString</span><span class="func">()</span>
+      </p>
+      <p>
+      <span class="comm">//the output will be string with the date of today</span>  
+      </p>   
+    </div> 
 </div>
-
-
-
+<br>
+<br>
+<div class="code">
+    <div class="fileName">
+    <P>YourJsFile.js</p>
+    <p class="copy" data-codeCopy="let bool = ez.isPrime(num)" ><img style="width: 15px;" src="./Assets/copy.png" alt=""> copy</p>
+    </div>
+    <div class="codeContent">
+     <p>
+      <span class="resv">let</span>
+      <span class="constVar">timeString</span>
+      <span >= </span>
+      <span class="constVar">ez</span><span>.</span><span class="num">timeToString</span><span class="func">()</span>
+      </p>
+      <p>
+      <span class="comm">// the output will string with current time</span>  
+      </p>   
+    </div> 
+</div>
+<br>
+<br>
+<div class="code">
+    <div class="fileName">
+    <P>YourJsFile.js</p>
+    <p class="copy" data-codeCopy="let bool = ez.isPrime(num)" ><img style="width: 15px;" src="./Assets/copy.png" alt=""> copy</p>
+    </div>
+    <div class="codeContent">
+     <p>
+      <span class="resv">let</span>
+      <span class="constVar">diff</span>
+      <span >= </span>
+      <span class="constVar">ez</span><span>.</span><span class="num">timeDiff</span><span class="func">(</span><span class="string">'01-01-2001'</span><span>,</span><span class="constVar">ez</span><span>.</span><span class="num">dateToString</span><span class="Purple">()</span><span class="func">)</span>
+      </p>
+      <p>
+        <span class="comm">//will return object with the following attributs</span>
+        <br>
+        <span class="comm">//days</span> 
+        <br>
+        <span class="comm">//hours</span>
+        <br>
+        <span class="comm">//minutes</span>
+        <br>
+        <span class="comm">//seconds</span>
+      </p>
+    </div> 
+</div>
+</div>
 
  זה הסקריפט שממנו אתה תעתיק את הקוד לתוך התבניות
 <script>
-
-   
-    //זה כרטיס
-    let todayDate = ez.dateToString()
-    // the output will be string with the date of today
-
-
-
-
-    //זה כרטיס
-    let timeString = ez.timeToString()
-    // the output will string with current time
-
     //זהכרטיס 
     let diff = ez.timeDiff('01-01-2001',ez.dateToString())
     //will return object with the following attributs
@@ -232,12 +284,6 @@
     //hours
     //minutes
     //seconds
-
-
-
-
-
-
 </script>
 </body>
 </html>
