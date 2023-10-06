@@ -24,6 +24,16 @@ body {
     margin-top: 34px;
 
 }
+#SubTitles-Js .w3-bar-block ,#SubTitles-Js .w3-bar-item {
+    width: 60%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0;
+}
 .w3-padding-64 {
  padding: 0 !important;
 }

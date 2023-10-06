@@ -10,28 +10,13 @@
 
 </head>
 <body>
-<script>
 
-
-
-function jsonToExcelAndDownload(data, fileName) {
-  const ws = XLSX.utils.json_to_sheet(data);
-  const wb = XLSX.utils.book_new();
+<input type="file" name="d" onchange="handleExceltoJsonOnChange((data)=>{
+  console.log(data);
+})" id="f">
   
 
-  XLSX.utils.book_append_sheet(wb, ws, 'Sheet 1');
 
-  XLSX.writeFile(wb, fileName + '.xlsx');
-}
 
-// Usage example:
-const jsonData = [
-  { Name: 'John', Age: 30 },
-  { Name: 'Jane', Age: 25 },
-  { Name: '', Age: '' },
-  { Name: 'Bob', Age: 40 },
-];
-
-</script>
 </body>
 </html>

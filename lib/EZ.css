@@ -108,6 +108,7 @@ input[type='text']:hover,input[type='number']:hover,select:hover,input[type='ema
 input[type=color] { 
 	padding: 0;
 	border: none;
+    cursor: pointer;
 	width: 2em;
 	height: 2em;
 	border-radius: 50%;
