@@ -23,6 +23,7 @@ body {font-size:16px;}
     const init = ()=> {
     $('#Home-container').fadeOut();
     $('#JS-examples-container').fadeOut();
+    $('#MathEX-container').fadeOut();
     $('#CSS-examples-container').fadeOut();
     $('#Contributing-container').fadeOut();
     $('#Contact-container').fadeOut();
@@ -283,7 +284,14 @@ body {font-size:16px;}
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <!-- MathEX PAGE -->
 <div id="MathEX-container">
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
+      <!-- Header -->
+      <div class="w3-container" style="margin-top:61px" id="HeaderLog">
+        <img  id="logoImg" src="./Assets/fullLogo4.png" alt="">
+        <h1 class="w3-jumbo"><b>EZ Math</b></h1>
+      </div>
+    </div>
 </div>
 <!-- MathEX PAGE -->
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -805,6 +813,7 @@ function w3_close(a) {
     $('#JS-examples-container').fadeOut();
     $('#CSS-examples-container').fadeOut();
     $('#Contributing-container').fadeOut();
+    $('#MathEX-container').fadeOut();
     $('#Contact-container').fadeOut();
     $('#Download-container').fadeOut();
     $(`#${a.id}-container`).fadeIn(250);
