@@ -385,11 +385,32 @@ label[for=file] {
     border: 1px black solid;
     aspect-ratio: 16/9;
   }
+  .box6{
+    width: 16.66vw;
+    border: 1px black solid;
+    aspect-ratio: 16/9;
+  }
+    .box7{
+        width: 14.28vw;
+        border: 1px black solid;
+        aspect-ratio: 16/9;
+    }
+
   .box8{
     width: 12.5vw;
     border: 1px black solid;
     aspect-ratio: 16/9;
   }
+    .box9{
+        width: 11.11vw;
+        border: 1px black solid;
+        aspect-ratio: 16/9;
+    }
+    .box10{
+        width: 10vw;
+        border: 1px black solid;
+        aspect-ratio: 16/9;
+    }
 
   .Box2{
     width: 50vw;
@@ -411,11 +432,33 @@ label[for=file] {
     border: 1px black solid;
     aspect-ratio: 1/1;
   }
+
+  .Box6{
+    width: 16.66vw;
+    border: 1px black solid;
+    aspect-ratio: 1/1;
+  }
+    .Box7{
+        width: 14.28vw;
+        border: 1px black solid;
+        aspect-ratio: 1/1;
+    }
+
   .Box8{
     width: 12.5vw;
     border: 1px black solid;
     aspect-ratio: 1/1;
   }
+    .Box9{
+        width: 11.11vw;
+        border: 1px black solid;
+        aspect-ratio: 1/1;
+    }
+    .Box10{
+        width: 10vw;
+        border: 1px black solid;
+        aspect-ratio: 1/1;
+    }
 
 
   .header-fix {
